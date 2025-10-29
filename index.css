@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* ヒーローセクション ------------------------------------ */
+.index_hero {
+  max-width: 599px;
+  width: 100%;
+  height: 854px;
+  margin: 0 auto;
+  background-image: url(../images/mainvisual.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* 使う時のお願いセクション --------------------------------- */
+.index_main_attention {
+  padding: 25px;
+  border: 2px #5F59FF dashed;
+}
+
+/* 使う時のお願いセクション タイトル */
+.index_main_attention_title {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* 使う時のお願いセクション 説明 */
+.index_main_attention_description {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 15px;
+  line-height: 1.5;
+}
+
+/* 使う時のお願いセクション 同意 */
+.index_main_agreement_radio {
+  margin: 10px 0 0 0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* フレーム選択ボタンセクション ----------------------------------- */
+/* フレーム選択ボタン */
+.index_main_usage_button {
+  align-items: center;
+  margin: 0 auto 0 auto;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  background:
+    radial-gradient(circle at center,
+      rgba(255, 255, 255, 0.6) 0px,
+      rgba(255, 255, 255, 0.6) 1px,
+      transparent 1px),
+    linear-gradient(90deg, #f366b3, #5F59FF);
+  background-size: 7px 7px, 100%;
+  background-repeat: repeat;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+/* ボタン横　gif */
+.index_main_usage_button img {
+  width: 70px;
+  filter: drop-shadow(0 0 5px #fff);
+}
+
+/* フレーム選択ボタンセクション ホバー時 */
+.index_main_usage_button:hover {
+  transform: translateY(-3px);
+}
+
+/* フレーム選択ボタンセクション　説明 */
+.index_main_usage p{
+  margin: 10px 0 0 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* フレーム選択ボタンセクション　下リンク */
+.index_main_usage .index_main_usage_link a{
+  color: #000;
+  transition: all 0.3s;
+}
+
+/* フレーム選択ボタンセクション　下リンク　ホバー時 */
+.index_main_usage .index_main_usage_link a:hover{
+  color: #5F59FF;
+}
+
+/* みんなの投稿を見るセクション ------------------------------- */
+.index_main_posts_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.index_main_posts_slides{
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+  gap: 40px;
+}
+
+.index_main_posts_slides img{
+  width: 100%;
+  height: 250px;
+}
+

@@ -1,0 +1,134 @@
+/* グラデーション背景 */
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#fff, #78FFC4);
+}
+
+/* 画面全体 */
+div#wrap {
+    position: relative;
+    width: 400px;
+    height: 100vh;
+    margin: 0 auto 0 auto;
+}
+
+/* 左上にある前の画面に戻るボタン */
+.usage_main_button {
+    margin: 0 0 0 10px;
+    padding: 0 10px 2px 10px;
+    border: 1px solid #78FFC4;
+    border-radius: 5px;
+    background-color: #000;
+    font-size: 1.3rem;
+    color: #78FFC4;
+    cursor: pointer;
+}
+
+/* 背景が白の半透明の部分 */
+.usage_main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* 説明エリア */
+.usage_main_description {
+    margin: 30px auto 0 auto;
+}
+
+/* 使い方説明　タイトル */
+.usage_main_description_title {
+    margin: 0 0 30px 0;
+}
+
+/* 使い方説明　サブタイトル */
+.usage_main_description_subtitle {
+    margin: 0 0 10px 0;
+}
+
+/* スライド内容 */
+.slide-item {
+    padding: 0 10px;
+}
+
+/* 説明　文字 */
+.usage_main_description p {
+    padding: 0 15px;
+    line-height: 1.4;
+}
+
+/* 基本の画像設定 */
+.usage_main_description img {
+    display: block;
+    width: auto;
+    height: 350px;
+    margin: 0 auto 20px auto;
+}
+
+/* 編集画面　横画像 */
+.usage_main_description .usage_main_description_img {
+    display: block;
+    width: 93%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    /* width: 93% !important;
+    height: auto !important; */
+
+}
+
+/* 編集画面　機能説明リスト */
+.usage_main_description .usage_main_description_list {
+    font-size: .8rem;
+    line-height: 1.7;
+}
+
+/* Slickのカスタマイズ */
+.slick-slider {
+    margin-bottom: 30px;
+}
+
+/* Slickの矢印カスタマイズ */
+.slick-prev,
+.slick-next {
+    width: 50px;
+    height: auto;
+    aspect-ratio: 1/1;
+    z-index: 10;
+    color: #000;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 25px;
+    font-weight: normal;
+    color: #000;
+}
+
+/* 矢印　位置 */
+.slick-prev {
+    left: -20px;
+}
+
+.slick-next {
+    right: -20px;
+}
+
+/* Slickのドット（インジケーター）カスタマイズ */
+.slick-dots {
+    bottom: -25px;
+}
+
+.slick-dots li button:before {
+    font-size: 15px;
+    color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 100;
+    color: #F250A9;
+}

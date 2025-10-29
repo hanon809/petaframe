@@ -1,0 +1,31 @@
+body {
+    background-color: #fff;
+}
+
+/* 画面全体 ----------------------------------------- */
+div#wrap {
+    position: relative;
+}
+
+.comment_main img {
+    display: block;
+    width: 200px;
+    margin: 50px auto 0 auto;
+    background-color: #D9D9D9;
+}
+
+.comment_main .c-button{
+    width: 300px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #F250A9;
+    /* background-color: #747474; */
+    color: #fff;
+    box-sizing: border-box;
+}
+
+/* .comment_main .c-button:hover{
+} */

@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+body {
+  font-family: 'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic Pro', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+div#wrap {
+  width: 100%;
+  max-width: 850px;
+	height: 100%;
+	max-height: 350px;
+}
+
+.edit_main {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+/* 左側のツール */
+.edit_main_leftside {
+	background: #78FFC4;
+	background: linear-gradient(230deg, rgba(120, 255, 196, 0.8) 0%, rgba(140, 207, 226, 0.8) 47%, rgba(158, 101, 255, 0.8) 100%);
+	border-radius: 0 50px 50px 0;
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 200px;
+  border: 3px solid #5a4a8a;
+  border-left: none;
+  margin-left: -20px;
+}
+
+.edit_main_leftside_tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.edit_main_leftside_tools_button {
+  border: none;
+	background: none;
+  padding: 18px 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.edit_main_leftside_tools_icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit_main_leftside_tools_icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edit_main_leftside_tools_label {
+  font-size: 12px;
+  color: #4a3f7a;
+}
+
+.edit_main_controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.edit_main_leftside_controls_button {
+  background: #5ff5c8;
+  border: 1px solid #FFFFFF;
+  border-radius: 30px;
+  padding: 20px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #9E65FF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit_main_rightside {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100px;
+  padding-top: 5px;
+}
+
+/* 右側のツール */
+.edit_main_rightside_tools {
+  display: flex;
+  flex-direction: column;
+	margin: auto;
+	gap: 12px;
+	}
+
+.edit_main_rightside_tools_button {
+	border: none;
+	background: none;
+	padding: 16px 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.edit_main_rightside_tools_icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit_main_rightside_tools_icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.edit_main_rightside_tools_label {
+  font-size: 11px;
+  color: #8a63d2;
+  font-weight: 600;
+  text-align: center;
+}
+
+.edit_main_completion {
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.edit_main_completion_button {
+  background: #ff69b4;
+  border: none;
+  border-radius: 30px;
+  padding: 16px 28px;
+  font-size: 16px;
+	color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.edit_main_leftside:last-child {
+  flex: 1;
+  border-radius: 12px;
+  border: none;
+  padding: 20px;
+  margin-left: 0;
+}
+
+.edit_main_leftside_preview {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.edit_main_leftside_preview:after {
+  content: 'プレビューエリア';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  font-size: 20px;
+  font-weight: 300;
+}

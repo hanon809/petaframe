@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+body {
+background: linear-gradient(to bottom, #8fffd0 0%, #8fffd0 5%, #ffffff 15%, #ffffff 100%);
+}
+
+/* 画面全体 ----------------------------------------- */
+div#wrap {
+    position: relative;
+}
+
+/* ロゴ　トップ */
+.frame_main_logo {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* 絞り込みセクション ------------------------------------ */
+.frame_main_filtering {
+    margin: 0 auto 40px auto;
+}
+
+/* カテゴリー　絞り込み */
+.frame_main_filtering_category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+/* カラー　絞り込み */
+.frame_main_filtering_color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin: 15px auto 0 auto;
+}
+
+.frame_main_color:nth-child(2) {
+    background-color: #FF4F4F;
+}
+
+.frame_main_color:nth-child(3) {
+    background-color: #FFC300;
+}
+
+.frame_main_color:nth-child(4) {
+    background-color: #00C3FF;
+}
+
+.frame_main_color:nth-child(5) {
+    background-color: #7EFDAB;
+}
+
+/* 検索結果 */
+.frame_main_result {
+    padding: 0 0 0 20px;
+    font-weight: bold;
+}
+
+/* フレーム選択セクション ---------------------------------- */
+.frame_main_selection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px 20px;
+    margin: 50px auto 50px auto;
+}
+
+.frame_main_selection div {
+    width: 47%;
+}
+
+.frame_main_selection img {
+    width: 100%;
+    background-color: #D9D9D9;
+}
+
+.frame_main_selection p {
+    display: block;
+    padding: 20px 0 0 0;
+    text-align: center;
+    font-size: .8rem;
+}

@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+body {
+    background-color: #fff;
+    background-image: url(../images/backimg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* 画面全体 ----------------------------------------- */
+div#wrap {
+    position: relative;
+}
+
+.completed_preview_main_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 230px;
+    margin: 0 auto 0 auto;
+}
+
+.completed_preview_main a {
+    color: #fff;
+}
+
+.completed_preview_main_button{
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* YESボタン */
+.completed_preview_main_button a:nth-child(1) .c-button {
+    background-color: #F250A9;
+}
+
+/* NOボタン */
+.completed_preview_main_button a:nth-child(2) .c-button {
+    background-color: #9E65FF;
+}
+
+.completed_preview_main img {
+    display: block;
+    width: 300px;
+    margin: 50px auto 20px auto;
+    background-color: #d9d9d9;
+}
+
+.completed_preview_main p {
+    text-align: center;
+    font-size: 1.2rem;
+}
